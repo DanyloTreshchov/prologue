@@ -3,7 +3,10 @@ outputElement.textContent = '';  // Clear previous output
 
 const session = pl.create(1000);
 
-const query = `consult('tales.pl'), init(Tale).`;
+const query = `consult('prolog_code.js'), init(Tale).`; 
+//I moved prolog code to a js file for Github Pages to load it
+
+
 session.query(query);
 
 session.answer(result => {
